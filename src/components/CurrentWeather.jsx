@@ -13,7 +13,7 @@ function CurrentWeather({ city, weather, isCelsius, toggleUnits }) {
         </div>
         <button
           onClick={toggleUnits}
-          className="mt-4 md:mt-0 px-5 py-2 bg-white/30 rounded-xl text-lg font-semibold hover:bg-white/40 transition duration-200 ease-in-out"
+          className="mt-4 ml-3 md:mt-0 px-5 py-2 bg-white/30 rounded-xl text-lg font-semibold hover:bg-white/40 transition duration-200 ease-in-out"
         >
           Switch to {isCelsius ? "°F" : "°C"}
         </button>
