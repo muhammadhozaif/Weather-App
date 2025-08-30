@@ -3,12 +3,13 @@ import React from "react";
 
 function SearchBar({ city, setCity, onSearch }) {
   function handleKeyDown(e) {
-    if ((e.key = "Enter")) {
-      onSearch();
+    if (e.key === "Enter") {
+      onSearch(); // Trigger search when Enter is pressed
     }
   }
+
   return (
-    <div className='className="flex items-center bg-white/10 backdrop-blur-md rounded-2xl p-3 shadow-md"'>
+    <div className="flex items-center bg-white/10 backdrop-blur-md rounded-2xl p-3 shadow-md">
       <input
         type="text"
         placeholder="Enter City"
@@ -18,7 +19,7 @@ function SearchBar({ city, setCity, onSearch }) {
         className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none"
       />
       <button onClick={onSearch}>
-        <Search className="w-5 h-5 text-white"></Search>
+        <Search className="w-5 h-5 text-white" />
       </button>
     </div>
   );

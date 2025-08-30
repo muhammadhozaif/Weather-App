@@ -9,9 +9,7 @@ function CurrentWeather({ city, weather, isCelsius, toggleUnits }) {
         <div>
           <h1 className="text-xl font-semibold">{city}</h1>
           <p className="text-4xl font-bold text-orange-400">{temp}</p>
-          <p className="capitalize">
-            {weather.condition?.text || "No condition available"}
-          </p>
+          <p className="capitalize">{weather.condition.text}</p>
         </div>
         <button
           onClick={toggleUnits}
